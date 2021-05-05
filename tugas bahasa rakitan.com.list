@@ -1,0 +1,350 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+tugas bahasa rakitan.com -- emu8086 assembler version: 4.08  
+ 
+[ 5/5/2021  --  10:45:53 PM ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       
+[   2]        :                                       ; You may customize this and other start-up templates;
+[   3]        :                                       ; The location of this template is c:\emu8086\inc\0_com_template.txt
+[   4]        :                                       
+[   5]        :                                       org 100h
+[   6]        :                                       
+[   7]        :                                       Org 100h
+[   8]    0100: B4 02                                 MOV AH,02H          ;nilai servis untuk mencetak karakter
+[   9]    0102: B2 4A                                 MOV DL,'J'          ;Karakter ASCII yang akan dicetak
+[  10]    0104: CD 21                                 INT 21H             ;mencetak karakter
+[  11]    0106: B2 41                                 MOV DL,'A'
+[  12]    0108: CD 21                                 INT 21H
+[  13]    010A: B2 44                                 MOV DL,'D'
+[  14]    010C: CD 21                                 INT 21H
+[  15]    010E: B2 57                                 MOV DL,'W'
+[  16]    0110: CD 21                                 INT 21H
+[  17]    0112: B2 41                                 MOV DL,'A'
+[  18]    0114: CD 21                                 INT 21H
+[  19]    0116: B2 4C                                 MOV DL,'L'
+[  20]    0118: CD 21                                 INT 21H
+[  21]    011A: B2 20                                 MOV DL,' '
+[  22]    011C: CD 21                                 INT 21H
+[  23]        :                                       
+[  24]    011E: B2 4B                                 MOV DL,'K'
+[  25]    0120: CD 21                                 INT 21H
+[  26]    0122: B2 55                                 MOV DL,'U'
+[  27]    0124: CD 21                                 INT 21H
+[  28]    0126: B2 4C                                 MOV DL,'L'
+[  29]    0128: CD 21                                 INT 21H
+[  30]    012A: B2 49                                 MOV DL,'I'
+[  31]    012C: CD 21                                 INT 21H
+[  32]    012E: B2 41                                 MOV DL,'A'
+[  33]    0130: CD 21                                 INT 21H
+[  34]    0132: B2 48                                 MOV DL,'H'
+[  35]    0134: CD 21                                 INT 21H
+[  36]    0136: B2 20                                 MOV DL,' '
+[  37]    0138: CD 21                                 INT 21H
+[  38]        :                                       
+[  39]    013A: B2 54                                 MOV DL,'T'
+[  40]    013C: CD 21                                 INT 21H
+[  41]    013E: B2 2E                                 MOV DL,'.'
+[  42]    0140: CD 21                                 INT 21H
+[  43]    0142: B2 45                                 MOV DL,'E'
+[  44]    0144: CD 21                                 INT 21H
+[  45]    0146: B2 4C                                 MOV DL,'L'
+[  46]    0148: CD 21                                 INT 21H
+[  47]    014A: B2 45                                 MOV DL,'E'
+[  48]    014C: CD 21                                 INT 21H
+[  49]    014E: B2 4B                                 MOV DL,'K'
+[  50]    0150: CD 21                                 INT 21H
+[  51]    0152: B2 54                                 MOV DL,'T'
+[  52]    0154: CD 21                                 INT 21H
+[  53]    0156: B2 52                                 MOV DL,'R'
+[  54]    0158: CD 21                                 INT 21H
+[  55]    015A: B2 4F                                 MOV DL,'O'
+[  56]    015C: CD 21                                 INT 21H
+[  57]        :                                       
+[  58]    015E: B2 20                                 MOV DL,' '
+[  59]    0160: CD 21                                 INT 21H
+[  60]    0162: B2 32                                 MOV DL,'2'
+[  61]    0164: CD 21                                 INT 21H
+[  62]    0166: B2 30                                 MOV DL,'0'
+[  63]    0168: CD 21                                 INT 21H
+[  64]    016A: B2 31                                 MOV DL,'1'
+[  65]    016C: CD 21                                 INT 21H
+[  66]    016E: B2 32                                 MOV DL,'2'
+[  67]    0170: CD 21                                 INT 21H
+[  68]    0172: B2 0D                                 MOV DL,0DH
+[  69]    0174: CD 21                                 INT 21H
+[  70]    0176: B2 0A                                 MOV DL,0AH
+[  71]    0178: CD 21                                 INT 21H
+[  72]    017A: B2 0D                                 MOV DL,0DH
+[  73]    017C: CD 21                                 INT 21H
+[  74]        :                                       
+[  75]        :                                       ;KETERANGAN KELOMPOK 1
+[  76]    017E: B2 54                                 MOV DL,'T'
+[  77]    0180: CD 21                                 INT 21H
+[  78]    0182: B2 45                                 MOV DL,'E'
+[  79]    0184: CD 21                                 INT 21H
+[  80]    0186: B2 4B                                 MOV DL,'K'
+[  81]    0188: CD 21                                 INT 21H
+[  82]    018A: B2 41                                 MOV DL,'A'
+[  83]    018C: CD 21                                 INT 21H
+[  84]    018E: B2 4E                                 MOV DL,'N'
+[  85]    0190: CD 21                                 INT 21H
+[  86]    0192: B2 20                                 MOV DL,' '
+[  87]    0194: CD 21                                 INT 21H
+[  88]    0196: B2 41                                 MOV DL,'A'
+[  89]    0198: CD 21                                 INT 21H
+[  90]    019A: B2 4E                                 MOV DL,'N'
+[  91]    019C: CD 21                                 INT 21H
+[  92]    019E: B2 47                                 MOV DL,'G'
+[  93]    01A0: CD 21                                 INT 21H
+[  94]    01A2: B2 4B                                 MOV DL,'K'
+[  95]    01A4: CD 21                                 INT 21H
+[  96]    01A6: B2 41                                 MOV DL,'A'
+[  97]    01A8: CD 21                                 INT 21H
+[  98]    01AA: B2 28                                 MOV DL,'('
+[  99]    01AC: CD 21                                 INT 21H
+[ 100]    01AE: B2 31                                 MOV DL,'1'
+[ 101]    01B0: CD 21                                 INT 21H
+[ 102]    01B2: B2 29                                 MOV DL,')'
+[ 103]    01B4: CD 21                                 INT 21H
+[ 104]    01B6: B2 3D                                 MOV DL,'='
+[ 105]    01B8: CD 21                                 INT 21H
+[ 106]    01BA: B2 4B                                 MOV DL,'K'
+[ 107]    01BC: CD 21                                 INT 21H
+[ 108]    01BE: B2 45                                 MOV DL,'E'
+[ 109]    01C0: CD 21                                 INT 21H
+[ 110]    01C2: B2 4C                                 MOV DL,'L'
+[ 111]    01C4: CD 21                                 INT 21H
+[ 112]    01C6: B2 4F                                 MOV DL,'O'
+[ 113]    01C8: CD 21                                 INT 21H
+[ 114]    01CA: B2 4D                                 MOV DL,'M'
+[ 115]    01CC: CD 21                                 INT 21H
+[ 116]    01CE: B2 50                                 MOV DL,'P'
+[ 117]    01D0: CD 21                                 INT 21H
+[ 118]    01D2: B2 4F                                 MOV DL,'O'
+[ 119]    01D4: CD 21                                 INT 21H
+[ 120]    01D6: B2 4B                                 MOV DL,'K'
+[ 121]    01D8: CD 21                                 INT 21H
+[ 122]    01DA: B2 20                                 MOV DL,' '
+[ 123]    01DC: CD 21                                 INT 21H
+[ 124]    01DE: B2 31                                 MOV DL,'1'
+[ 125]    01E0: CD 21                                 INT 21H
+[ 126]    01E2: B2 0D                                 MOV DL,0DH
+[ 127]    01E4: CD 21                                 INT 21H
+[ 128]    01E6: B2 0A                                 MOV DL,0AH
+[ 129]    01E8: CD 21                                 INT 21H
+[ 130]        :                                       ;KETERANGAN KELOMPOK 2
+[ 131]    01EA: B2 54                                 MOV DL,'T'
+[ 132]    01EC: CD 21                                 INT 21H
+[ 133]    01EE: B2 45                                 MOV DL,'E'
+[ 134]    01F0: CD 21                                 INT 21H
+[ 135]    01F2: B2 4B                                 MOV DL,'K'
+[ 136]    01F4: CD 21                                 INT 21H
+[ 137]    01F6: B2 41                                 MOV DL,'A'
+[ 138]    01F8: CD 21                                 INT 21H
+[ 139]    01FA: B2 4E                                 MOV DL,'N'
+[ 140]    01FC: CD 21                                 INT 21H
+[ 141]    01FE: B2 20                                 MOV DL,' '
+[ 142]    0200: CD 21                                 INT 21H
+[ 143]    0202: B2 41                                 MOV DL,'A'
+[ 144]    0204: CD 21                                 INT 21H
+[ 145]    0206: B2 4E                                 MOV DL,'N'
+[ 146]    0208: CD 21                                 INT 21H
+[ 147]    020A: B2 47                                 MOV DL,'G'
+[ 148]    020C: CD 21                                 INT 21H
+[ 149]    020E: B2 4B                                 MOV DL,'K'
+[ 150]    0210: CD 21                                 INT 21H
+[ 151]    0212: B2 41                                 MOV DL,'A'
+[ 152]    0214: CD 21                                 INT 21H
+[ 153]    0216: B2 28                                 MOV DL,'('
+[ 154]    0218: CD 21                                 INT 21H
+[ 155]    021A: B2 32                                 MOV DL,'2'
+[ 156]    021C: CD 21                                 INT 21H
+[ 157]    021E: B2 29                                 MOV DL,')'
+[ 158]    0220: CD 21                                 INT 21H
+[ 159]    0222: B2 3D                                 MOV DL,'='
+[ 160]    0224: CD 21                                 INT 21H
+[ 161]    0226: B2 4B                                 MOV DL,'K'
+[ 162]    0228: CD 21                                 INT 21H
+[ 163]    022A: B2 45                                 MOV DL,'E'
+[ 164]    022C: CD 21                                 INT 21H
+[ 165]    022E: B2 4C                                 MOV DL,'L'
+[ 166]    0230: CD 21                                 INT 21H
+[ 167]    0232: B2 4F                                 MOV DL,'O'
+[ 168]    0234: CD 21                                 INT 21H
+[ 169]    0236: B2 4D                                 MOV DL,'M'
+[ 170]    0238: CD 21                                 INT 21H
+[ 171]    023A: B2 50                                 MOV DL,'P'
+[ 172]    023C: CD 21                                 INT 21H
+[ 173]    023E: B2 4F                                 MOV DL,'O'
+[ 174]    0240: CD 21                                 INT 21H
+[ 175]    0242: B2 4B                                 MOV DL,'K'
+[ 176]    0244: CD 21                                 INT 21H
+[ 177]    0246: B2 20                                 MOV DL,' '
+[ 178]    0248: CD 21                                 INT 21H
+[ 179]    024A: B2 32                                 MOV DL,'2'
+[ 180]    024C: CD 21                                 INT 21H
+[ 181]    024E: B2 0D                                 MOV DL,0DH      ;karakter enter
+[ 182]    0250: CD 21                                 INT 21H         ;cetak karakter
+[ 183]    0252: B2 0A                                 MOV DL,0AH      ;karakter enter
+[ 184]    0254: CD 21                                 INT 21H         ;cetak karakter
+[ 185]    0256: B2 0D                                 MOV DL,0DH
+[ 186]    0258: CD 21                                 INT 21H
+[ 187]    025A: B2 0A                                 MOV DL,0AH
+[ 188]    025C: CD 21                                 INT 21H
+[ 189]        :                                       
+[ 190]        :                                       
+[ 191]    025E: E9 D6 04                              jmp mulai
+[ 192]        :                                       
+[ 193]    0261: 0D 0A 20 23 48 41 52 49 20 20 20 20   msg1: db 0dh,0ah," #HARI              MATA KULIAH                      WAKTU          RUANG",0dh,0ah,0dh,0ah,"  *SENIN   :| Rangkaian Listrik&Teknik Digital     | 07.00-12.00 |  B.2.4  |",0dh,0ah,"  *SELASA :| Praktikum Teknik Elektro             | 08.40-10.20 |  B.2.4  |",0dh,0ah,"  *SELASA :| Medan Elektromagnet                  | 12.30-15.00 |  B.2.2  |",0dh,0ah,"  *RABU   :| Sumber Energi Baru Terbarukan        | 07.00-08.40 |  B.2.4  |",0dh,0ah,"  *RABU   :| Matematika Diskrit                   | 09.30-12.00 |  B.2.2  |",0dh,0ah,"  *JUMAT  :| Rangkaian Elektrik                   | 07.00-08.40 |  B.4.1  |",0dh,0ah,"  *JUMAT  :| BAHASA ASSEMBLY                      | 07.00-08.40 |  D.2.J  |",0dh,0ah,'$'
+                20 20 20 20 20 20 20 20 20 20 4D 41 
+                54 41 20 4B 55 4C 49 41 48 20 20 20 
+                20 20 20 20 20 20 20 20 20 20 20 20 
+                20 20 20 20 20 20 20 57 41 4B 54 55 
+                20 20 20 20 20 20 20 20 20 20 52 55 
+                41 4E 47 0D 0A 0D 0A 20 20 2A 53 45 
+                4E 49 4E 20 20 3A 7C 20 52 61 6E 67 
+                6B 61 69 61 6E 20 4C 69 73 74 72 69 
+                6B 26 54 65 6B 6E 69 6B 20 44 69 67 
+                69 74 61 6C 20 20 20 20 20 7C 20 30 
+                37 2E 30 30 2D 31 32 2E 30 30 20 7C 
+                20 20 42 2E 32 2E 34 20 20 7C 0D 0A 
+                20 20 2A 53 45 4C 41 53 41 20 3A 7C 
+                20 50 72 61 6B 74 69 6B 75 6D 20 54 
+                65 6B 6E 69 6B 20 45 6C 65 6B 74 72 
+                6F 20 20 20 20 20 20 20 20 20 20 20 
+                20 20 7C 20 30 38 2E 34 30 2D 31 30 
+                2E 32 30 20 7C 20 20 42 2E 32 2E 34 
+                20 20 7C 0D 0A 20 20 2A 53 45 4C 41 
+                53 41 20 3A 7C 20 4D 65 64 61 6E 20 
+                45 6C 65 6B 74 72 6F 6D 61 67 6E 65 
+                74 20 20 20 20 20 20 20 20 20 20 20 
+                20 20 20 20 20 20 20 7C 20 31 32 2E 
+                33 30 2D 31 35 2E 30 30 20 7C 20 20 
+                42 2E 32 2E 32 20 20 7C 0D 0A 20 20 
+                2A 52 41 42 55 20 20 20 3A 7C 20 53 
+                75 6D 62 65 72 20 45 6E 65 72 67 69 
+                20 42 61 72 75 20 54 65 72 62 61 72 
+                75 6B 61 6E 20 20 20 20 20 20 20 20 
+                7C 20 30 37 2E 30 30 2D 30 38 2E 34 
+                30 20 7C 20 20 42 2E 32 2E 34 20 20 
+                7C 0D 0A 20 20 2A 52 41 42 55 20 20 
+                20 3A 7C 20 4D 61 74 65 6D 61 74 69 
+                6B 61 20 44 69 73 6B 72 69 74 20 20 
+                20 20 20 20 20 20 20 20 20 20 20 20 
+                20 20 20 20 20 7C 20 30 39 2E 33 30 
+                2D 31 32 2E 30 30 20 7C 20 20 42 2E 
+                32 2E 32 20 20 7C 0D 0A 20 20 2A 4A 
+                55 4D 41 54 20 20 3A 7C 20 52 61 6E 
+                67 6B 61 69 61 6E 20 45 6C 65 6B 74 
+                72 69 6B 20 20 20 20 20 20 20 20 20 
+                20 20 20 20 20 20 20 20 20 20 7C 20 
+                30 37 2E 30 30 2D 30 38 2E 34 30 20 
+                7C 20 20 42 2E 34 2E 31 20 20 7C 0D 
+                0A 20 20 2A 4A 55 4D 41 54 20 20 3A 
+                7C 20 42 41 48 41 53 41 20 41 53 53 
+                45 4D 42 4C 59 20 20 20 20 20 20 20 
+                20 20 20 20 20 20 20 20 20 20 20 20 
+                20 20 20 7C 20 30 37 2E 30 30 2D 30 
+                38 2E 34 30 20 7C 20 20 44 2E 32 2E 
+                4A 20 20 7C 0D 0A 24                
+[ 194]    04CC: 0D 0A 20 23 48 41 52 49 20 20 20 20   msg2: db 0dh,0ah," #HARI              MATA KULIAH                      WAKTU          RUANG",0dh,0ah,0dh,0ah,"  *SENIN   :| Rangkaian Listrik&Teknik Digital     | 07.00-12.00 |  B.2.4  |",0dh,0ah,"  *SELASA :| Praktikum Teknik Elektro             | 13.00-15.00 |  B.2.4  |",0dh,0ah,"  *SELASA :| Medan Elektromagnet                  | 09.30-12.00 |  B.2.2  |",0dh,0ah,"  *RABU   :| Sumber Energi Baru Terbarukan        | 07.00-08.40 |  B.2.4  |",0dh,0ah,"  *RABU   :| Matematika Diskrit                   | 12.30-03.00 |  B.2.2  |",0dh,0ah,"  *JUMAT  :| Rangkaian Elektrik                   | 12.30-03.00 |  B.4.1  |",0dh,0ah,"  *JUMAT  :| BAHASA ASSEMBLY                      | 07.00-08.40 |  D.2.J  |",0dh,0ah,'$'
+                20 20 20 20 20 20 20 20 20 20 4D 41 
+                54 41 20 4B 55 4C 49 41 48 20 20 20 
+                20 20 20 20 20 20 20 20 20 20 20 20 
+                20 20 20 20 20 20 20 57 41 4B 54 55 
+                20 20 20 20 20 20 20 20 20 20 52 55 
+                41 4E 47 0D 0A 0D 0A 20 20 2A 53 45 
+                4E 49 4E 20 20 3A 7C 20 52 61 6E 67 
+                6B 61 69 61 6E 20 4C 69 73 74 72 69 
+                6B 26 54 65 6B 6E 69 6B 20 44 69 67 
+                69 74 61 6C 20 20 20 20 20 7C 20 30 
+                37 2E 30 30 2D 31 32 2E 30 30 20 7C 
+                20 20 42 2E 32 2E 34 20 20 7C 0D 0A 
+                20 20 2A 53 45 4C 41 53 41 20 3A 7C 
+                20 50 72 61 6B 74 69 6B 75 6D 20 54 
+                65 6B 6E 69 6B 20 45 6C 65 6B 74 72 
+                6F 20 20 20 20 20 20 20 20 20 20 20 
+                20 20 7C 20 31 33 2E 30 30 2D 31 35 
+                2E 30 30 20 7C 20 20 42 2E 32 2E 34 
+                20 20 7C 0D 0A 20 20 2A 53 45 4C 41 
+                53 41 20 3A 7C 20 4D 65 64 61 6E 20 
+                45 6C 65 6B 74 72 6F 6D 61 67 6E 65 
+                74 20 20 20 20 20 20 20 20 20 20 20 
+                20 20 20 20 20 20 20 7C 20 30 39 2E 
+                33 30 2D 31 32 2E 30 30 20 7C 20 20 
+                42 2E 32 2E 32 20 20 7C 0D 0A 20 20 
+                2A 52 41 42 55 20 20 20 3A 7C 20 53 
+                75 6D 62 65 72 20 45 6E 65 72 67 69 
+                20 42 61 72 75 20 54 65 72 62 61 72 
+                75 6B 61 6E 20 20 20 20 20 20 20 20 
+                7C 20 30 37 2E 30 30 2D 30 38 2E 34 
+                30 20 7C 20 20 42 2E 32 2E 34 20 20 
+                7C 0D 0A 20 20 2A 52 41 42 55 20 20 
+                20 3A 7C 20 4D 61 74 65 6D 61 74 69 
+                6B 61 20 44 69 73 6B 72 69 74 20 20 
+                20 20 20 20 20 20 20 20 20 20 20 20 
+                20 20 20 20 20 7C 20 31 32 2E 33 30 
+                2D 30 33 2E 30 30 20 7C 20 20 42 2E 
+                32 2E 32 20 20 7C 0D 0A 20 20 2A 4A 
+                55 4D 41 54 20 20 3A 7C 20 52 61 6E 
+                67 6B 61 69 61 6E 20 45 6C 65 6B 74 
+                72 69 6B 20 20 20 20 20 20 20 20 20 
+                20 20 20 20 20 20 20 20 20 20 7C 20 
+                31 32 2E 33 30 2D 30 33 2E 30 30 20 
+                7C 20 20 42 2E 34 2E 31 20 20 7C 0D 
+                0A 20 20 2A 4A 55 4D 41 54 20 20 3A 
+                7C 20 42 41 48 41 53 41 20 41 53 53 
+                45 4D 42 4C 59 20 20 20 20 20 20 20 
+                20 20 20 20 20 20 20 20 20 20 20 20 
+                20 20 20 7C 20 30 37 2E 30 30 2D 30 
+                38 2E 34 30 20 7C 20 20 44 2E 32 2E 
+                4A 20 20 7C 0D 0A 24                
+[ 195]        :                                       
+[ 196]        :                                       
+[ 197]    0737:                                       mulai:
+[ 198]        :                                       
+[ 199]    0737: B4 01                                 mov ah, 01      ;nilai servis di ah dg 01
+[ 200]    0739: CD 21                                 int 21h         ;cetak karakter
+[ 201]        :                                       
+[ 202]    073B: 3C 31                                 cmp al, '1'     ; bandingkan al dengan 01
+[ 203]    073D: 74 07                                 je kel_1        ; lompat ke kelompok_1   jika sama
+[ 204]        :                                       
+[ 205]    073F: 3C 32                                 cmp al, '2'     ;bandingkan al dengan 2
+[ 206]    0741: 74 0C                                 je kel_2        ; lompat ke kelompok_2   jika sama
+[ 207]        :                                       
+[ 208]        :                                       
+[ 209]    0743: EB 00                                 jmp exit        ;lompat ke exit
+[ 210]    0745:                                       exit:           ;exit program
+[ 211]    0745: C3                                    ret
+[ 212]        :                                       
+[ 213]    0746:                                       kel_1:
+[ 214]    0746: BA 61 02                              mov dx, msg1    ;ambil offset msg1
+[ 215]    0749: B4 09                                 mov ah, 9       ;servis untuk cetak kalimat
+[ 216]    074B: CD 21                                 int 21h         ;cetak kalimat
+[ 217]    074D: EB E8                                 jmp mulai       ;lompat ke mulai
+[ 218]    074F:                                       kel_2:
+[ 219]    074F: BA CC 04                              mov dx, msg2    ;ambil offset msg1
+[ 220]    0752: B4 09                                 mov ah, 9       ;servis untuk cetak kalimat
+[ 221]    0754: CD 21                                 int 21h         ;cetak kalimat
+[ 222]    0756: EB DF                                 jmp mulai       ;lompat ke mulai
+[ 223]        :                                       
+[ 224]    0758: C3                                    ret
+[ 225]        :                                       
+[ 226]        :                                       
+[ 227]        :                                       
+[ 228]        :                                       
+[ 229]        :                                       
+[ 230]        :                                       
+ 
+===================================================================================================
+ 
+
+
+
+
+===================================================================================================
